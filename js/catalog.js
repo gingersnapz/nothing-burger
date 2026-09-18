@@ -1,0 +1,75 @@
+// Each category is independent data. Optional `interaction` names are registered in toys.js.
+const category = (id, label, symbol, entries) => ({
+  id, label, symbol,
+  entries: entries.map(([title, body, note = 'FILE UNDER: ABSOLUTELY UNNECESSARY.', interaction]) => ({title, body, note, interaction})),
+});
+export const categories = [
+  category('facts', 'Useless facts', '✳', [
+    ['Bananas are berries.', 'Botanically speaking. Strawberries, meanwhile, have some explaining to do.'],
+    ['An octopus has three hearts.', 'Which seems excessive for someone who never texts back.'],
+    ['Wombats make cube-shaped poop.', 'Nature’s least requested geometry lesson.'],
+    ['Venus takes its sweet time.', 'One rotation takes longer than one trip around the Sun. Even planets procrastinate.'],
+    ['Sharks are older than trees.', 'They have been here a very long time and still haven’t learned to sit.'],
+    ['Butterflies taste with their feet.', 'Please do not use this as a restaurant strategy.'],
+  ]),
+  category('advice', 'Terrible advice', '↗', [
+    ['Put it on tomorrow’s list.', 'Tomorrow You has a suspiciously open calendar.', 'COMEDY. PLEASE DO NOT BUILD A LIFE AROUND THIS.'],
+    ['Start a meeting about meetings.', 'Invite everyone. Schedule a follow-up to discuss how it went.'],
+    ['Rename the problem “a feature.”', 'Congratulations. Your problem now has a product roadmap.'],
+    ['Buy a notebook for your notebooks.', 'Organization is mostly just smaller things inside bigger things.'],
+    ['Become mysterious.', 'Reply “the prophecy” when someone asks why you bought seventeen limes.'],
+    ['Give every task a dramatic title.', 'Taking out the trash is now Operation Midnight Raccoon.'],
+  ]),
+  category('fortunes', 'Oddly specific fortunes', '✦', [
+    ['A package is in your future.', 'You will briefly forget what you ordered. It will be a cable.'],
+    ['You will open the fridge again.', 'The contents will remain philosophically unchanged.'],
+    ['A forgotten tab will find you.', 'It has been playing music for the last eleven minutes.'],
+    ['Your next great idea arrives at 1:07 a.m.', 'By morning, the note will read “soup but Bluetooth.”'],
+    ['A small victory approaches.', 'The USB plug will fit on the first try. Remain humble.'],
+    ['You will need a very specific screw.', 'You own 400 screws. None of them are that screw.'],
+  ]),
+  category('questions', 'Ridiculous questions', '?', [
+    ['Does a sandwich know it’s a sandwich?', 'Or does it think it’s just having a very strange bread day?'],
+    ['If your printer had a LinkedIn, what skills would it endorse?', 'Paper jams. Emotional damage. Advanced magenta dependency.'],
+    ['How many ducks is too many ducks?', 'Please show your work. The ducks are reviewing applications.'],
+    ['Is cereal a breakfast aquarium?', 'Discuss quietly. The cereal is sensitive.'],
+    ['What would a cloud keep in its pockets?', 'Probably your entire photo library and a little rain.'],
+    ['If a chair gets tired, where does it sit?', 'The furniture department has declined to comment.'],
+  ]),
+  category('warnings', 'Extremely fake warnings', '!', [
+    ['Your vibes are running low.', 'Please connect to a nearby snack before continuing.', 'FICTIONAL ALERT. YOUR DEVICE IS FINE.'],
+    ['Unscheduled whimsy detected.', 'Remain calm. A tiny parade may pass through shortly.', 'FICTIONAL ALERT. YOUR DEVICE IS FINE.'],
+    ['Your tabs have formed a union.', 'They are requesting names, breaks, and an end to “I’ll read it later.”', 'FICTIONAL ALERT. YOUR DEVICE IS FINE.'],
+    ['Productivity successfully avoided.', 'The Department of Absolutely Nothing thanks you for your service.', 'FICTIONAL ALERT. YOUR DEVICE IS FINE.'],
+    ['The moon is buffering.', 'Try looking away and looking back again.', 'FICTIONAL ALERT. THE MOON IS FINE.'],
+  ]),
+  category('dinner', 'Dinner decisions', '◒', [
+    ['Tonight: tacos.', 'A structural engineering project you can eat. Customize to your dietary needs.'],
+    ['Breakfast has been promoted to dinner.', 'Pancakes never signed an exclusivity agreement with mornings.'],
+    ['Pasta. You’re welcome.', 'Choose a shape based entirely on how funny its name sounds.'],
+    ['Make a snack plate.', 'A little of this. A little of that. Call it a tasting menu.'],
+    ['Baked potato night.', 'A warm, edible container for whatever toppings make you happy.'],
+    ['Soup and something crunchy.', 'An excellent partnership. No further questions.'],
+  ]),
+  category('tech', 'Cloud & tech nonsense', '☁', [
+    ['The cloud is just someone else’s computer.', 'And somehow, you are still the person restarting it.'],
+    ['It works on my machine.', 'We will now be shipping my machine to every customer.'],
+    ['Serverless. Not invoice-less.', 'Your functions may be ephemeral. Your bill has excellent persistence.'],
+    ['Have you tried turning it off?', 'The device. The meeting. The entire sprint.'],
+    ['There is no staging environment.', 'There is only production with a brave attitude.'],
+    ['Your infrastructure is now a haiku.', 'Instances drifting. / Someone left the region wrong. / Billing continues.'],
+  ]),
+  category('printing', '3D-printing nonsense', '⌘', [
+    ['First layer: a personality test.', 'Some people meditate. You watch a nozzle draw a rectangle for twelve minutes.'],
+    ['You saved $4 by printing it.', 'It only cost $19 in filament and one perfectly good weekend.'],
+    ['Spaghetti is ready.', 'Unfortunately, you were printing a phone stand.'],
+    ['Just one more calibration cube.', 'The previous thirty-seven were merely rehearsals.'],
+    ['Your filament has trust issues.', 'It would like a dry box and a little reassurance.'],
+    ['Estimated time: 3 hours.', 'Actual time: a new geological era.'],
+  ]),
+  category('toys', 'Tiny distractions', '◎', [
+    ['Premium digital bubble wrap.', 'All the satisfaction. None of the packaging.', 'PLEASE POP RESPONSIBLY.', 'bubbles'],
+    ['Let a coin overthink it.', 'Two sides. Zero qualifications. One very confident answer.', 'FOR DECISIONS OF NO PARTICULAR CONSEQUENCE.', 'coin'],
+    ['You have permission to do nothing.', 'Make it official with a completely unofficial stamp.', 'VALID WHEREVER YOU FEEL LIKE IT.', 'stamp'],
+  ]),
+];

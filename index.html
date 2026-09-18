@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f3f0e7">
+  <meta name="description" content="A tiny, weird corner of the internet. Push a button. Receive something wonderfully unnecessary.">
+  <title>Falycia — The Useless Internet Machine</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./style.css">
+  <script type="module" src="./js/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#machine">Skip to the machine</a>
+  <div class="page">
+    <header><a class="wordmark" href="./" aria-label="Falycia home">falycia<span>✳</span></a><span class="header-note">INDEPENDENTLY UNPRODUCTIVE.</span><span class="online"><i></i> ALL SYSTEMS POINTLESS</span></header>
+    <main>
+      <section class="intro" aria-labelledby="title">
+        <div class="eyebrow"><span>EST. FIVE MINUTES AGO</span><span>✳ INTERNET ODDITIES DEPT.</span></div>
+        <h1 id="title">The useless<br>internet <span class="italic">machine.</span><span class="asterisk" aria-hidden="true">✳</span></h1>
+        <div class="intro-bottom"><p>The internet used to be weird.<br>Let’s keep a little of that alive.</p><p class="small-note">NO PURPOSE. NO PRESSURE.<br>JUST ONE VERY GOOD BUTTON. ↘</p></div>
+      </section>
+      <section id="machine" class="machine" aria-label="Useless internet machine">
+        <div class="console">
+          <div class="panel-top"><span>F–001 / NONSENSE GENERATOR</span><span class="indicator" aria-hidden="true">● ● ○</span></div>
+          <div class="control-body"><span class="step">01 — SELECT YOUR LEVEL OF NONSENSE</span>
+            <label class="sr-only" for="category">Content category</label><select id="category"><option value="all">A little bit of everything</option></select>
+            <button id="generate" class="big-button" disabled><span>GIVE ME<br>SOMETHING</span><span class="button-arrow" aria-hidden="true">↗</span></button>
+            <p class="button-caption">100% free. Approximately 0% useful.</p>
+          </div>
+          <div class="console-bottom"><span><i class="tiny-light"></i> READY WHEN YOU ARE</span><span>↳ PUSH. REPEAT. QUESTION EVERYTHING.</span></div>
+        </div>
+        <div class="output-side">
+          <div class="output-label"><span>02 — YOUR FRESHLY DISPENSED NOTHING</span><span aria-hidden="true">↓</span></div>
+          <article class="receipt" id="receipt" aria-live="polite" aria-atomic="true">
+            <div class="receipt-head"><span id="result-category">A SMALL INVITATION</span><span id="result-number">№ 000</span></div>
+            <div class="result-symbol" id="result-symbol" aria-hidden="true">✳</div>
+            <h2 id="result-title">Something unnecessary<br>is waiting for you.</h2>
+            <p id="result-body">A questionable fortune. A deeply unhelpful fact. Maybe just permission to do absolutely nothing.</p>
+            <div id="interaction"></div>
+            <div class="receipt-foot"><span id="result-note">PUSH THE BIG ORANGE BUTTON.</span><span aria-hidden="true">✦</span></div>
+          </article>
+          <p class="receipt-caption">Please retain this nonsense for your records.</p>
+        </div>
+      </section>
+      <noscript><p class="no-script">The machine needs JavaScript to dispense nonsense. Enable it and reload to push the button.</p></noscript>
+      <section class="inventory" aria-label="What's in the machine"><p>WHAT’S IN THE MACHINE?</p><div><span>Useless facts</span><span>Terrible advice</span><span>Oddly specific fortunes</span><span>Dinner decisions</span><span>Tech nonsense</span><span>Tiny distractions</span></div></section>
+      <section class="manifesto"><span class="little-star" aria-hidden="true">✳</span><p>Not everything needs to be a side hustle.<br>Some things can just be <em>a little ridiculous.</em></p><span class="stamp">CERTIFIED<br><strong>USELESS</strong><br>SINCE RIGHT NOW</span></section>
+    </main>
+    <footer><span>© FALYCIA.COM · MADE OF MOSTLY NOTHING.</span><span><span id="count">0</span> MOMENTS SUCCESSFULLY WASTED <span aria-hidden="true">↗</span></span></footer>
+  </div>
+</body>
+</html>
