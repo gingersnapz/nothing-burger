@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f3f0e7"><meta name="description" content="Form 404-B: an unnecessarily difficult application for absolutely nothing. A terrible web form by Falycia.">
+<title>Form 404-B — Falycia’s Department of Unnecessary Forms</title>
+<link rel="icon" href="../favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="../style.css"><link rel="stylesheet" href="./form.css">
+<script type="module" src="./form.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#application">Skip to the application</a>
+<div class="page form-page">
+<header><a class="wordmark" href="../" aria-label="Falycia home">falycia<span>✳</span></a><a class="escape" href="../">← Escape to the machine</a></header>
+<main>
+<section class="form-intro"><div class="eyebrow"><span>DEPARTMENT OF UNNECESSARY FORMS</span><span>FORM 404–B · REV. WHY</span></div><div class="intro-grid"><div><h1>A simple form.<br><em>Our apologies.</em></h1><p>Apply for permission to submit an application.<br>We’ve made every effort to make this an effort.</p></div><div class="bureau-stamp" aria-hidden="true">USER<br><strong>HOSTILE</strong><br>BY DESIGN</div></div><div class="notice"><strong>THIS IS A GAME.</strong> Use made-up details and a fake password. Nothing you enter is sent or saved. Refreshing erases your progress. Naturally.</div></section>
+<div class="application-layout" id="application">
+<aside class="dossier"><span class="eyebrow">YOUR CASE FILE</span><h2>Ticket #0001</h2><p>You are first in line.<br>This will not help.</p><ol id="steps"><li aria-current="step"><span>01</span> Establish existence</li><li><span>02</span> Provide nonsense</li><li><span>03</span> Accept your fate</li></ol><div class="burden"><span>ADMINISTRATIVE BURDEN</span><strong id="burden">0</strong><span>unnecessary actions</span></div><p class="desk-note">“Could this have been an email?”<br><em>No. We ruined that too.</em></p></aside>
+<div class="paperwork">
+<div class="paper-top"><span id="page-label">SECTION 01 / 03</span><span>ALL FIELDS UNREASONABLE</span></div>
+<form id="diabolical-form" novalidate autocomplete="off">
+<fieldset id="form-controls" disabled>
+<section class="stage" data-stage="0" aria-labelledby="stage-0-title">
+<h2 id="stage-0-title" tabindex="-1">First, prove you exist.</h2><p class="section-copy">We accept fictional people. They complain less.</p>
+<div class="field"><label for="letter">01. Your invented name</label><p id="name-help" class="hint">Typing has been discontinued. Select one letter at a time. At least 3 letters; no more than 12. The alphabet reshuffles after each addition.</p><div class="name-machine"><output id="alias" aria-label="Invented name" aria-live="polite">_ _ _</output><div class="letter-controls"><select id="letter" aria-describedby="name-help"></select><button type="button" id="add-letter">Add letter +</button><button type="button" id="undo-letter" aria-label="Remove last letter">⌫</button></div></div></div>
+<div class="field"><label for="birthday">02. Your entirely fictional birthday</label><p class="hint" id="birthday-help">One slider. Every day since 1900. Precision is a personal problem. Arrow keys move one day.</p><output id="birthday-display" for="birthday" class="date-display"></output><input id="birthday" type="range" min="0" value="0" step="1" aria-describedby="birthday-help"><div class="range-ends"><span>JAN 1, 1900</span><span>TODAY, APPARENTLY</span></div><label class="check-row"><input id="birthday-confirm" type="checkbox"> I confirm that this is a date.</label></div>
+</section>
+<section class="stage" data-stage="1" aria-labelledby="stage-1-title" hidden>
+<h2 id="stage-1-title" tabindex="-1">Details we do not need.</h2><p class="section-copy">Please be accurate about your imaginary circumstances.</p>
+<div class="field"><label for="country">03. Country of mild inconvenience</label><p class="hint">Sorted alphabetically by the third letter. You’re welcome.</p><select id="country"><option value="">Select your jurisdiction</option><option>Republic of Buffering</option><option>New Tabistan</option><option>Isle of Unread Emails</option><option>Kingdom of Maybe Later</option><option>United States of Confusion</option><option>Land of the Missing Sock</option><option>Principality of Printer Errors</option><option>Federation of Forgotten Passwords</option></select></div>
+<div class="field"><label for="password">04. Create a disposable bureaucratic password</label><p class="hint" id="password-help">Invent one just for this game. It is visible because even the security department has given up.</p><input type="text" id="password" maxlength="40" spellcheck="false" autocapitalize="off" autocomplete="off" aria-describedby="password-help password-rules" placeholder="Definitely not a real password"><ul class="rules" id="password-rules"><li data-rule="length">Exactly 12 characters. Not 11. Not 13.</li><li data-rule="upper">An uppercase letter, to establish authority.</li><li data-rule="lower">A lowercase letter, to keep it humble.</li><li data-rule="egg">The word “egg” in lowercase. Procurement insisted.</li><li data-rule="number">Exactly one digit, and it must be odd.</li><li data-rule="space">No spaces. We cannot afford the real estate.</li></ul><details class="loophole"><summary>Request a loophole</summary><p><code>Bureaucregg7</code> satisfies the committee. Please look surprised.</p></details></div>
+</section>
+<section class="stage" data-stage="2" aria-labelledby="stage-2-title" hidden>
+<h2 id="stage-2-title" tabindex="-1">The fine print has fine print.</h2><p class="section-copy">You are almost almost done.</p>
+<div class="field"><label for="terms-box">05. Read the terms of unnecessary service</label><p class="hint" id="terms-help">Scroll this box to the bottom to unlock the acknowledgement. Keyboard users: focus it and press End.</p><div class="terms-box" id="terms-box" tabindex="0" role="region" aria-label="Terms of unnecessary service" aria-describedby="terms-help"><h3>THE NON-BINDING NON-AGREEMENT</h3><p>1. By reading this sentence, you acknowledge that this sentence exists.</p><p>2. The Department reserves the right to reserve rights it does not need.</p><p>3. Please do not feed the dropdowns after midnight.</p><p>4. All applications will be processed in the order we remember them.</p><p>5. The word “soon” is not a unit of time recognized by this office.</p><p>6. Any resemblance to a useful service is purely accidental.</p><p>7. The printer is out of cyan. This is now your problem.</p><p>8. You may be asked to provide proof of proof. A photocopy of a photocopy will suffice.</p><p>9. Our hold music is a single kazoo. The kazoo is on leave.</p><p>10. The committee meets every fifth Thursday of February.</p><p>11. Your information stays in this page’s memory. We have neither the ambition nor the server to collect it.</p><p>12. Nothing here is a real agreement. This entire form is a joke.</p><p>13. You have reached the bottom. An astonishing display of vertical persistence.</p><p><strong>END OF TERMS. BEGINNING OF REGRET.</strong></p></div><label class="check-row"><input id="terms-accept" type="checkbox" disabled> I have scrolled past the things.</label><p id="terms-status" class="hint" role="status">Acknowledgement locked. Please perform scrolling.</p></div>
+<div class="field"><span class="field-label">06. Confirm your humanity, approximately</span><p class="hint">Select the only statement with an even number of “not”s. Our robot detection budget was $0.</p><div class="human-options"><label><input type="radio" name="human" value="one"> I am not a human.</label><label><input type="radio" name="human" value="two"> I am not not a human.</label><label><input type="radio" name="human" value="three"> I am not not not a human.</label></div></div>
+</section>
+<div id="form-error" class="form-error" role="alert" tabindex="-1" hidden></div>
+<div class="form-actions"><button type="button" id="back" hidden>← Go backwards</button><button type="submit" id="continue" class="primary">Proceed, regrettably →</button></div>
+<p class="submission-note" id="submission-note">Estimated completion time: longer than necessary.</p>
+</fieldset>
+</form>
+<noscript><p class="notice">Even our bureaucracy requires JavaScript. Enable it to play, or <a href="../">escape to the machine</a>.</p></noscript>
+<section id="success" class="success" hidden aria-labelledby="success-title"><div class="approved" aria-hidden="true">UNNECESSARILY<br><strong>APPROVED</strong></div><h2 id="success-title" tabindex="-1">Your application to apply<br>has been accepted.</h2><p>You are now officially eligible to have done this.</p><dl><div><dt>Applicant</dt><dd id="receipt-name"></dd></div><div><dt>Unnecessary actions</dt><dd id="receipt-actions"></dd></div><div><dt>Actual things accomplished</dt><dd>0</dd></div><div><dt>Data transmitted</dt><dd>Absolutely none</dd></div></dl><p class="success-note">No confirmation email will arrive.<br>We respect your inbox more than your time.</p><button type="button" id="restart" class="primary">Make the same mistake again ↻</button><a href="../" class="exit-link">I have suffered enough. Take me home.</a></section>
+<div class="paper-bottom">F–404–B <span>PLEASE DO NOT THANK US.</span></div>
+</div>
+</div>
+</main>
+<footer><span>© FALYCIA · A PUBLIC DISSERVICE.</span><span>NO DATA SAVED. ONLY TIME LOST.</span></footer>
+</div>
+</body>
+</html>
